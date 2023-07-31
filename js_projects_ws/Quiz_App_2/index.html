@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>J_WS QUIZ</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https:fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- JS-Script at the end -->
+</head>
+<body>
+    <h1>This is a Quiz App.</h1>
+    <form id="form_quiz" name="form_quiz">
+        <h2>One choice questions</h2>
+        <p>What is the capital of Nepal?</p>
+        <input id="textbox1" type="text" name="question1">
+
+        <h2>Mutiple choice questions</h2>
+        <p>What's the birthplace of Gautam Buddha?</p>
+        <input type="radio" id="b_gb" name="question2" value="Nepal">Nepal<br>
+        <input type="radio" id="b_gb" name="question2" value="Japan">Japan<br>
+
+        <p>Where is Mt. everest located?</p>
+        <input type="radio" id="l_me" name="question3" value="Nepal">Nepal<br>
+        <input type="radio" id="l_me" name="question3" value="Japan">Japan<br>
+
+        <input id="button" type="button" value="I'm finished!" onclick="check();">
+    </form>
+
+    <div id="after_submit">
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        <img id="picture"></img>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
